@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Flexi</title>
+  </head>
+  <body>
+    <header>
+      <h1>Flexi</h1>
+    </header>
+
+    <section class="subheading"><h3>Search for projects</h3></section>
+
+    <main>
+      <section class="filters">
+        <h2>Filters</h2>
+
+        <div class="filter-group">
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <option value="all">All</option>
+            <option value="special">Special</option>
+            <option value="new">New</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="status">Status:</label>
+          <select id="status" name="status">
+            <option value="all">All</option>
+            <option value="open">Open</option>
+            <option value="closed">Closed</option>
+          </select>
+        </div>
+
+        <button id="applyFilters">Apply Filters</button>
+      </section>
+
+      <section class="search">
+        <h2>Search</h2>
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <button id="searchButton">Search</button>
+      </section>
+    </main>
+
+    <section class="results">
+      <p>
+        Your search results will be displayed here after you click on "search"
+      </p>
+      <!-- search results will show in this space I made here -->
+    </section>
+
+    <footer>
+      <p id="footer">&copy; 2023 Bonmichael Udeh. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
